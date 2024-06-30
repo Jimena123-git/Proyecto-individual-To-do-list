@@ -1,0 +1,105 @@
+body {
+    background: rgb(255,162,227);
+    background: radial-gradient(circle, rgba(255,162,227,1) 0%, rgba(201,201,201,1) 0%);
+}
+
+.date {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Ajuste de espaciado y margen para mejorar la estructura visual */
+.dateLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 15px; /* Menor espacio entre elementos de fecha */
+}
+
+#dateNumber {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#dateYear{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+#dateMonth, #dateText {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#dateText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5cb95f; 
+}
+
+
+.checklist-img {
+    width: 120px; /* Icono de lista de verificación más grande */
+    height: 96px;
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.task-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task-input input[type="text"], .task-input button {
+    margin-right: 10px;
+}
+
+#taskListContainer {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+#taskList li {
+    padding: 12px; /* espacio interno alrededor del contenido de cada tarea */
+    border-bottom: 1px solid #ddd; /* línea inferior de 1 píxel sólida con color gris claro (#ddd) */
+    transition: background-color 0.3s ease; /* transición suave de 0.3 segundos para el color de fondo al pasar el mouse */
+}
+
+#taskList li:hover {
+    background-color: #ccf0cd;/* cambio de color de fondo a un tono más claro (#f9f9f9) cuando se pasa el mouse sobre la tarea */
+}
+.btn {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
